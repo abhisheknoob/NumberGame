@@ -1,0 +1,142 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main{
+    width: 30vw;
+    background-color: rgb(218, 212, 212);
+    text-align: center;
+    border: 8px solid rgb(117, 4, 223);
+    border: 1rem;
+    
+    /* padding: 8rem 5rem; */
+}
+
+#welcomeScreen img{
+    width: 50%;
+    height: 50%;
+    
+}
+#welcomeScreen h2{
+    margin: 4rem 3rem;
+    font-size: 2rem;
+}
+p{
+    font-size: 1.6rem;
+    margin: 3rem 0;
+}
+.button-wraper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.button-wraper button{
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    background-color: blueviolet;
+    color: white;
+    height: 5rem;
+    width: 16rem;
+    border-radius: 5px;
+}
+button:last-child{
+    background: rgb(53, 0, 102);
+}
+#GameArea{
+    /* height: 53vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#GameArea button{
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    background-color: blueviolet;
+    color: white;
+    height: 5rem;
+    width: 16rem;
+    border-radius: 5px;
+
+}
+#GameArea h2{
+    margin: 4rem 3rem;
+    font-size: 2rem;
+}
+
+section #InputBox{
+    width: 15rem;
+    height: 5rem;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    text-align: center;
+}
+.stats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.stats .info{
+    margin: 2rem;
+    font-size: 2rem;
+}
+span{
+    color: red;
+}
+
+/* ==========
+media queries 
+========== */
+@media (max-width:1000px) {
+    body{
+        width: 100vw;
+    }
+    main{
+        width: 40vw;
+        padding: 2rem;
+        
+       
+    }
+    html{
+        font-size: 50%;
+    }
+    
+}
+@media (max-width:600px) {
+  
+      main{
+        padding: 1rem;
+        width: 80%;
+      }
+    html{
+        font-size: 50%;
+        width: 60vw;
+        
+    }
+    
+}
+@media (max-width:400) {
+    main{
+        width: 90%;
+    }
+}

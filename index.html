@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assests/index.css">
+</head>
+<body onload="init()">
+    <main>
+        <div id="welcomeScreen">
+            <h2>guess the random number between 1-100</h2>
+            <img src="./images/game.jpg" alt="logo">
+            <section class="classEvents">
+                <p>select the difficulty</p>
+                <div class="button-wraper">
+                    <button onclick="EasyMode()">Easy:10 attempts</button>
+                    <button onclick="HardMode()">Hard:5 attempts</button>
+                </div>
+            </section>
+        </div>
+    
+
+    <!-- our game area  -->
+
+    <div id="GameArea">
+        <div class="newGameButton">
+            <button >New game</button>
+        </div>
+       <section>
+        <h2 id="textOutput">your guess</h2>
+        <input type="number" id="InputBox" min="0" max="100" placeholder="enter your guess" onchange="CompareGuess()">
+       </section>
+       <div class="stats">
+        <div class="info">
+            <h3>Number of previous attempts</h3>
+            <span class="attempts">0</span>
+        </div>
+        <div class="info">
+            <h3>Number of previous guess</h3>
+            <span class="guess">0</span>
+        </div>
+       </div>
+
+    </div>
+</main>
+<script src="./assests/index.js"></script>
+</body>
+</html>
